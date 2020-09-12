@@ -1,0 +1,32 @@
+.articulo_peluqueria_unisex{
+  width: 100%;
+  text-align: center;
+}
+
+
+.control_img_servicios{
+  width: 200px;
+  display: inline-block;
+  margin-right: -4px;
+  margin-top: -4px;
+}
+
+.control_img_peluqueria_unisex{
+  width: 100%;
+}
+
+h3{
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 0.5em;
+  background-color: black;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.9em;
+  border-radius: 10px;
+}
+
+.texto_servicios_peluqueria_unisex{
+  margin: 2%;
+}

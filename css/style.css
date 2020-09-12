@@ -1,0 +1,116 @@
+
+/*<-----------Section------------->*/
+
+
+section{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+h2{
+  background-color:#5f27cd;
+  color: white;
+  padding: 3%;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  text-align: center;
+  font-family:sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 14pt;
+  letter-spacing: 5px;
+}
+
+.texto_servicios{
+  display: none;
+}
+
+.servicios{
+    width: 30%;
+    min-width: 325px;
+    display: inline-block;
+}
+
+.control_img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.servicios:hover{
+  transition: 0.9s;
+  background-color: #a29bfe;
+  border-radius: 0% 0% 25% 25%;
+}
+
+.caja_eventos{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.eventos{
+    width: 40%;
+    min-width: 325px;
+    height: 300px;
+    background-color: lightgreen;
+    display: inline-block;
+    margin-bottom: 3%;
+}
+
+
+
+
+/*<--------Cierre Section---------->*/
+
+
+
+/*<--------Inicio Aside---------->*/
+
+aside{
+  height: auto;
+  margin: 10px 20px;
+  padding: 10px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  border: solid 2px white;
+  text-align: center;
+}
+
+.opiniones{
+  width: 300px;
+  height: 300px;
+  margin: 0px 20px 0px 0px;
+  display: inline-block;
+}
+
+.opiniones:hover{
+  background-color: #f1f2f6;
+  border-radius: 33%;
+  transition: 0.3s;
+}
+
+.texto_opiniones{
+  width: auto;
+  height: 80%;
+  padding: 20px;
+  margin-left: 3%;
+  white-space: initial;
+  font-family: verdana;
+  line-height: 2.3em;;
+}
+
+.caja_img{
+  width: 100px;
+  padding-left: 32%;
+  padding-top: 5%;
+}
+
+
+/*<--------Cierre Aside---------->*/

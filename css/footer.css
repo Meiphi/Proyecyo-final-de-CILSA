@@ -1,0 +1,34 @@
+footer{
+  width: 100%;
+  background-color: #5f27cd;
+  color: white;
+}
+
+.articulo_footer{
+  width:auto;
+  display: inline-block;
+  margin: 2%;
+}
+
+.red{
+  width: 25px;
+  display: inline-flex;
+}
+
+.contact{
+  width: 20px;
+
+  display: inline-flex;
+}
+
+.marca{
+  width: 200px;
+
+  display: inline-flex;
+}
+
+.texto_footer{
+  display: inline-flex;
+}
+
+/*<--------Fin footer---------->*/
