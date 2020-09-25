@@ -1,116 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@800&display=swap');
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif;*/
 
-/*<-----------Section------------->*/
-
-
-section{
-    margin-top: 20px;
-    width: 100%;
-    height: auto;
-    background-color: white;
-    text-align: center;
+:root{
+	--rosa : #eea39c;
+	--azul-francia: #0082A5;
+	--fucsia : #FF4A84;
+	--celeste : #00e8de;
+	--azul-hanss: #445aeb;
 }
 
-a{
-  text-decoration: none;
+html{
+	box-sizing: border-box;
 }
+
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.autores_imagenes{
+	display: none;
+}
+
+header{
+	width: 90%;
+	min-height: 80px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-bottom: 1px solid #2a2a2a;
+}
+
+.logo{
+	max-height: 40px;
+	margin: 0px 10px;
+}
+
+
+#titulo{
+	display: flex;
+	flex-direction: column;
+}
+
+h1, span{
+	font-family: 'Montserrat', sans-serif;
+	color: #2a2a2a;
+	font-size: 1em;
+	font-weight: 800;
+}
+
+@media only screen and (min-width: 400px){
+	#titulo{
+	display: flex;
+	flex-direction: row;
+}
+}
+
+nav{
+	display: none;
+}
+
+
+/*fin del header*/
 
 h2{
-  background-color:#5f27cd;
-  color: white;
-  padding: 3%;
-  margin-bottom: 20px;
-  margin-top: 40px;
-  text-align: center;
-  font-family:sans-serif;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 14pt;
-  letter-spacing: 5px;
-}
-
-.texto_servicios{
-  display: none;
-}
-
-.servicios{
-    width: 30%;
-    min-width: 325px;
-    display: inline-block;
-}
-
-.control_img{
-  width: 100%;
-  border-radius: 50%;
-}
-
-.servicios:hover{
-  transition: 0.9s;
-  background-color: #a29bfe;
-  border-radius: 0% 0% 25% 25%;
-}
-
-.caja_eventos{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.eventos{
-    width: 40%;
-    min-width: 325px;
-    height: 300px;
-    background-color: lightgreen;
-    display: inline-block;
-    margin-bottom: 3%;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.4em;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	margin-top: 30px;
 }
 
 
 
-
-/*<--------Cierre Section---------->*/
-
-
-
-/*<--------Inicio Aside---------->*/
-
-aside{
-  height: auto;
-  margin: 10px 20px;
-  padding: 10px;
-  overflow-y: hidden;
-  overflow-x: auto;
-  white-space: nowrap;
-  border: solid 2px white;
-  text-align: center;
+.s_service{
+	margin-top: 10px;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url(../img/photos_main/atencion_niños.png);
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	color: #FFF;
 }
 
-.opiniones{
-  width: 300px;
-  height: 300px;
-  margin: 0px 20px 0px 0px;
-  display: inline-block;
+.s_service:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
 }
 
-.opiniones:hover{
-  background-color: #f1f2f6;
-  border-radius: 33%;
-  transition: 0.3s;
+.s_service a{
+	width: 80%;
+	height: 70px;
+	border: 1px solid #FFF;
+	border-radius: 35px;
+	margin: 20px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.3em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
 
-.texto_opiniones{
-  width: auto;
-  height: 80%;
-  padding: 20px;
-  margin-left: 3%;
-  white-space: initial;
-  font-family: verdana;
-  line-height: 2.3em;;
-}
-
-.caja_img{
-  width: 100px;
-  padding-left: 32%;
-  padding-top: 5%;
+.s_service a:hover{
+	transition: 0.4s;
+	background-color: #FFF;
+	color: #2a2a2a;
 }
 
 
-/*<--------Cierre Aside---------->*/
+div.arrow {
+	width: 20px;
+	height: 20px;
+	margin-top: 20px;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+	position: relative;
+	transform: rotate(315deg);
+
+	border-bottom: 2px solid #FFFFFF;
+	border-left: 2px solid #FFFFFF;
+}
+
+.servicios_local{
+	width: 100%;
+	height: 100vh;
+}
+
+.servicios_local p{
+	padding: 20px 35px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+#icon_service{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.icon_service{
+	width: 40%;
+	height: auto;
+	padding: 30px;
+}
+
+.icon_service img{
+	max-width: 100%;
+}
+
+.icon_service span{
+	padding-top: 20px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
