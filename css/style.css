@@ -143,6 +143,12 @@ div.arrow {
 	border-left: 2px solid #FFFFFF;
 }
 
+
+
+
+
+
+
 .servicios_local{
 	width: 100%;
 	height: 100vh;
@@ -152,32 +158,60 @@ div.arrow {
 	padding: 20px 35px;
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
-
 }
 
 #icon_service{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	padding: 20px;
 }
 
+
 .icon_service{
-	width: 40%;
-	height: auto;
-	padding: 30px;
+	width: 128px;
+	height: 128px;
+
+	display: flex;
+	flex-direction: column;
+	
+	align-items: center;
+	justify-content: center;
+	
+	background-color: #c0c0c0c0;
+	border-radius: 50%;
+
+	margin:10px;
 }
 
 .icon_service img{
-	max-width: 100%;
+	max-width: 30%;
+	max-height: 30%;
 }
 
 .icon_service span{
 	padding-top: 20px;
 	text-align: center;
+	font-size: 0.8em;
+}
+.line{
+	display: none;
 }
 
-
+@media only screen and (min-width: 724px){
+	.servicios_local{
+		width: 100%;
+		height: auto;
+	}
+	.line{
+		display: block;
+		width: 60%;
+		height: 1px;
+		background-color: #2a2a2a;
+		border-radius: 35px;
+		margin: 40px auto;
+	}
+}
 
 
 
