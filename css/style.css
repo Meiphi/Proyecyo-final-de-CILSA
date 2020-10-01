@@ -224,7 +224,39 @@ div.arrow {
 	text-align: center;
 }
 
+.slider-testimonial{
+	width: 95%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+.testimonial-item{
+	width: 30%;
+	margin: 10px;
+}
 
 
+
+.testimonial-cliente img{
+	max-width: 60%;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+
+.marco_img{
+	position: absolute;
+}
+
+.marco{
+	position: relative;
+	top: -300px;
+}
+.img_f{
+	position: relative;
+
+}
 
 
